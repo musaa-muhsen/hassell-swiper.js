@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    .swiper-container {
+        max-width: 100%;
+        width: 100%;
+        height: 80vh;
+
+       
+
+
+    }
+    .swiper-slide {
+        max-width: 100%;
+        width: 100%;
+        background: #ccc;
+        // justify-content: center;
+        // align-items: center;
+        // display: flex;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+
+        img {
+          height: 100%;
+          width: 100%;
+            display: block;
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+            object-fit: cover;
+        
+            
+            
+        }
+        article {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;     
+            display: flex;
+           div {
+                padding: 10px 20px;
+                background: RGBA(0,0,0,0.3);
+                margin: auto;
+                color: #fff;
+                text-align: center;
+                h1 {
+                    text-transform: uppercase;
+                   // color: red;
+                   @media all and (max-width: 750px) {
+                    font-size: 1rem;
+                }
+                }
+                h2 {
+                    font-weight: 400;
+                    @media all and (max-width: 750px) {
+                        font-size: 0.9rem;
+                    }
+
+                }
+
+            }
+
+        }
+       
+        
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #fff !important;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        //
+        opacity: 1;
+
+    }
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: red;
+        opacity: 1;
+        border: solid #fff 2px;
+        background: transparent ;
+    }
+
+    .slide-1 {
+        // height: 100%;
+        // width: 100%;
+        // //background-color: red;
+        // background-image: url("1.jpg") !important;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+      
+        
+    }
