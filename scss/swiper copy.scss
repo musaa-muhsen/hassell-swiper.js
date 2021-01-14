@@ -6,30 +6,50 @@
     .swiper-container {
         max-width: 100%;
         width: 100%;
-        height: 80vh;   
-}
-body {
-    font-family: arial;
-}
+        height: 80vh;
 
+       
+
+
+    }
     .swiper-slide {
-
         max-width: 100%;
         width: 100%;
-        background-color: aquamarine;
-       
+        background: #ccc;
         // justify-content: center;
         // align-items: center;
         // display: flex;
-       display: flex;
- 
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-template-rows: 1fr;
        
 
-       
-        .overlay {
-margin: auto;
-         
+        img {
+           
+          height: 100%;
+          width: 100%;
+            //display: block;
+            grid-column: 1 / span 4;
+            grid-row: 1 / span 1;
+            object-fit: none;
+             @media all and (max-width: 749px) {
+                margin: 0 auto;
+                 //object-fit: scale-down;
+                 //width: 750px;
+                 outline: red solid 1px;
+                 width: 750px;
+                 grid-column: 2 / span 2;
+   
+
+             }
         
+            
+            
+        }
+        .overlay {
+
+            grid-column: 1 / span 4;
+            grid-row: 1 / span 1; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -39,31 +59,24 @@ margin: auto;
             header{
                 width: 700px;
                 @media all and (max-width: 750px) {
-                    width: 95%;
+                    width: 90%;
                 }
                       margin: 0 auto;
                      padding: 10px 20px;
-                     //background: RGBA(0,0,0,0.3);
-                     color: #fff !important;
+                     background: RGBA(0,0,0,0.3);
+                     color: #fff;
                      text-align: center;
-                     .big-title {
-                         font-weight: 700;
-                         font-size: 40px;
-                         margin-bottom: 5px;
+                     h1 {
                          text-transform: uppercase;
                         // color: red;
-                        color: #fff !important;
                         @media all and (max-width: 750px) {
-                         font-size: 1.3rem;
+                         font-size: 1rem;
                      }
                      }
-                     .small-title {
-                        color: #fff !important;
-                        font-size: 30px;
+                     h2 {
                          font-weight: 400;
-                         //text-transform: capitalize;
                          @media all and (max-width: 750px) {
-                             font-size: 1.1rem;
+                             font-size: 0.9rem;
                          }
      
                      }
@@ -92,11 +105,6 @@ margin: auto;
                          color: #5B9A37;
                          cursor: pointer;
                      }
-                     button:focus {
-                        outline: none !important;
-                        box-shadow: none !important;
-
-                     }
                 
                  }
 
@@ -109,43 +117,36 @@ margin: auto;
 
         }
         
-
+       
         
     
     .swiper-pagination-bullet-active {
         background-color: #fff !important;
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         //
         opacity: 1;
 
     }
     .swiper-pagination-bullet {
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         background: red;
         opacity: 1;
         border: solid #fff 2px;
         background: transparent ;
     }
-    .swiper-pagination-bullet:focus, .swiper-pagination-bullet-active:focus {
-        outline: none !important;
-        box-shadow: none !important;
-      }
 
-    .slide-image {
+    .slide-1 {
         // height: 100%;
         // width: 100%;
         // //background-color: red;
         // background-image: url("1.jpg") !important;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        @media all and (max-width: 800px) {
-            background-position: right;
-        }
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
       
         
     }
